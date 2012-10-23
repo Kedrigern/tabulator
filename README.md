@@ -1,24 +1,33 @@
-# Tabulator
+# Tabulator #
 
 The command line util to parse and convert tables between diferent formats. 
 
 The unique feature is **prety print**. 
 
-## Formats
-### Input
+## Formats ##
+
+### Input ###
+
 * csv
 * html
-### Output formats
+
+### Output formats ###
 * csv
 * html
 * LaTeX
-### In future release
+
+### In future release ###
+
 * Markdown
 * LaTeX (as input) 	
-## Third party libs
+
+## Third party libs ##
+
 * Command Line Parser Library: [www](http://commandline.codeplex.com/ "commandline.codeplex.com"), or [sources](https://github.com/gsscoder/commandline).
 * Nunit : [www](http://www.nunit.org/ "nunit.org") for unit testing
-## Usage
+
+## Usage ##
+
 Classic unix usage:
 
 ```./tabulator.exe table.csv```
