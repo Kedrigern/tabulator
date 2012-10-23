@@ -1,0 +1,98 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tabulator/App/Config.cs">
+    <Files>
+      <File FileName="Tabulator/Convertors/XHTML.cs" Line="36" Column="25" />
+      <File FileName="Tabulator/Convertors/LaTeX.cs" Line="25" Column="8" />
+      <File FileName="Tabulator/Convertors/Convertor.cs" Line="29" Column="1" />
+      <File FileName="Tabulator/Parsers/Parser.cs" Line="25" Column="1" />
+      <File FileName="Tabulator/Parsers/csv.cs" Line="12" Column="1" />
+      <File FileName="Tabulator/Parsers/xhtml.cs" Line="37" Column="18" />
+      <File FileName="Tabulator/Parsers/xhtmlTest.cs" Line="6" Column="2" />
+      <File FileName="Tabulator/App/Config.cs" Line="3" Column="55" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Solution Items" expanded="True" />
+          <Node name="Tabulator" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="App" expanded="True">
+              <Node name="Config.cs" selected="True" />
+            </Node>
+            <Node name="Convertors" expanded="True" />
+            <Node name="Core" expanded="True" />
+            <Node name="Parsers" expanded="True" />
+            <Node name="Utils" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True">
+          <Node name="Tabulator" expanded="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>this.data[0][0]</Value>
+          <Value>this.data[1][0]</Value>
+          <Value>this.data[2][0]</Value>
+          <Value>this.data[3][0]</Value>
+          <Value>column</Value>
+          <Value>max</Value>
+          <Value>i</Value>
+          <Value>sb[4]</Value>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/keddie/Projects/Tabulator/Tabulator/Main.cs" line="92" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Tabulator>
+    <MonoDevelop.Ide.CustomExecutionModes>
+      <Data Name="table" Id="2ebd3d33-34ad-46f5-b746-976f934d7cc9" ModeId="Default">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="table.csv" WorkingDirectory="/home/keddie/Projects/Tabulator/Tabulator/bin/Debug" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="html" Id="cab9e4a3-52cd-4f9e-909a-4cc819a98591" ModeId="Default">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="-f html table.csv" WorkingDirectory="/home/keddie/Projects/Tabulator/Tabulator/bin/Debug" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+      <Data Name="Mono Soft Debugger (Uživatelský)" Id="0b820c44-b227-4db7-9d8a-775be1799e33" ModeId="Mono Soft Debugger">
+        <CommandData>
+          <Item Key="MonoDevelop.Ide.Execution.CustomArgsCustomizer">
+            <Value Arguments="-i html table.html" WorkingDirectory="/home/keddie/Projects/Tabulator/Tabulator/bin/Debug" ctype="CustomArgsExecutionModeData">
+              <EnvironmentVariables />
+            </Value>
+          </Item>
+          <Item Key="MonoDevelop.Ide.Execution.MonoExecutionCustomizer">
+            <Value ctype="MonoExecutionParameters" />
+          </Item>
+        </CommandData>
+      </Data>
+    </MonoDevelop.Ide.CustomExecutionModes>
+  </MonoDevelop.Ide.ItemProperties.Tabulator>
+</Properties>
