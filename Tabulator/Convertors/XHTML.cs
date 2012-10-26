@@ -7,12 +7,11 @@ namespace Tabulator.Convertor
 {
 	public class xhtmlConvertor : Convertor
 	{
-		const string fieldDelimeter = "</td><td>";
-
 		public xhtmlConvertor ( Options opt = null ) : base( opt )	
 		{
 			if( opt == null )
 				opt = MainClass.Options;
+			fieldDelimeter = "</td><td>";
 		}
 
 		public override string Convert (Tabulator.Core.Table t)
@@ -37,38 +36,6 @@ namespace Tabulator.Convertor
 			buffer.AppendLine("</table>");
 			return buffer.ToString();
 		}
-
-		private void ConvertLine( Core.Line line ) {
-
-			int overrun = 0;
-			
-			// for all cells in line
-			for(int i = 0; i < line.Count; i++) {
-				
-				if( overrun == 0 ) {
-					buffer.Append( line[i].PadRight( this.optionalWidths[i] ) );
-					buffer.Append( fieldDelimeter );
-				}
-				
-				if( overrun < 0 ) throw new Exception("Not allowed state: overrun is negative");
-				
-				// we have overrun
-				if( overrun > 0 ) {
-					int content = this.optionalWidths[i] - line[i].Length;
-					
-					if( overrun + content <= this.optionalWidths[i] ) {
-						buffer.Append( line[i].PadRight( this.optionalWidths[i] - overrun ) );
-						buffer.Append( fieldDelimeter );
-						overrun = 0;
-					} else {
-						buffer.Append( line[i] );
-						buffer.Append( fieldDelimeter );
-						overrun = this.optionalWidths[i] - (overrun + line[i].Length);
-					}
-				}
-			}
-		}
-	
 	}
 }
 
