@@ -5,8 +5,6 @@ namespace Tabulator.Convertor
 {
 	public class csvConvertor : Convertor
 	{
-		public csvConvertor() {}
-
 		public csvConvertor (Options opt = null) : base( opt )	
 		{
 			if( opt == null )

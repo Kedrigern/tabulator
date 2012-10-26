@@ -33,6 +33,7 @@ namespace Tabulator.Convertor
 			}
 			buffer.AppendLine("</tbody>");
 			buffer.AppendLine("</table>");
+
 			return buffer.ToString();
 		}
 	}

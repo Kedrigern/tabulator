@@ -85,7 +85,7 @@ namespace Tabulator
 			// Convertor for output format
 			Convertor.Convertor con;
 #if DEBUG
-			Console.WriteLine( "[INFO] Output format: " + options.OutputFormat );
+			Console.WriteLine( "[INFO] Output format: {0}", options.OutputFormat );
 #endif
 			switch( options.OutputFormat ) {
 			case Format.latex:
@@ -96,6 +96,9 @@ namespace Tabulator
 				break;
 			case Format.html:
 				con = new Convertor.xhtmlConvertor();
+				break;
+			case Format.markdown:
+				con = new Convertor.MarkDownConvertor();
 				break;
 			default:
 				throw new NotImplementedException();

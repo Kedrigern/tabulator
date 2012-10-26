@@ -41,6 +41,7 @@ namespace Tabulator.Convertor
 				buffer.Append( lineDelimeter );			// \\ \n
 			}
 			buffer.Append("\\end{tabular}\n");
+
 			return buffer.ToString();
 		}	
 	}
