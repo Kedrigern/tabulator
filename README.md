@@ -15,10 +15,11 @@ The unique feature is **prety print**.
 * csv
 * html
 * LaTeX
+* makrkdown
 
 ### In future release ###
 
-* Markdown
+* Markdown (as input)
 * LaTeX (as input) 	
 
 ## Third party libs ##
