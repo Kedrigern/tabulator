@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Tabulator/App/Config.cs">
     <Files>
       <File FileName="Tabulator/Convertors/XHTML.cs" Line="36" Column="25" />

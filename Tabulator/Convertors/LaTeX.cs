@@ -30,7 +30,7 @@ namespace Tabulator.Convertor
 			
 			buffer.Append("\\begin{tabular}{|");
 			foreach( string s in t[0] ) {
-				buffer.Append(" C |");
+				buffer.Append(" c |");
 			}
 			buffer.Append("}\n");
 
