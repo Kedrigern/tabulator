@@ -16,8 +16,7 @@ namespace Tabulator.Convertor
 
 		public override string Convert (Tabulator.Core.Table t)
 		{
-			this.optionalWidths = t.MaxWidths( this.options.MaxColWidth );
-			buffer.Clear();
+			BeforeConvert(t);
 
 			buffer.AppendLine("<table>");
 			buffer.AppendLine("<thead>");
