@@ -14,7 +14,6 @@ namespace Tabulator.Parsers
 				root = XElement.Parse( inputText );
 			} catch ( Exception e) {
 				Console.WriteLine("During parsing of System.Xml.Linq.XElement throw: {0}.", e.Message);
-				Environment.Exit(1);
 			}
 
 			this.newTable = new List<Line>();

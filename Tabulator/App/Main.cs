@@ -17,8 +17,10 @@ namespace Tabulator
 		{
 			// Handle options
             var parser = new CommandLineParser(new CommandLineParserSettings(Console.Error));
-            if (!parser.ParseArguments(args, MainClass.options))
-                Environment.Exit(1);
+            if (!parser.ParseArguments(args, MainClass.options)) {
+				Console.Error.WriteLine("Bad format of arguments.");
+				Environment.Exit(1);
+			}
 
 			HandleSpecialOptions();
 
@@ -40,9 +42,18 @@ namespace Tabulator
 			}
 			if( options.Files.Count == 0 ) {
 				var sr = Console.In;
-				Run ( sr);
+				Run ( sr );
 			}
 			output.Close();
+
+			// if output file is empty delete it!
+			if( options.OutputFile != null) {
+				var fi = new FileInfo( options.OutputFile );
+				if( fi.Length < 4 ) {
+					// not proper output
+					File.Delete( options.OutputFile );
+				}
+			}
 		}
 
 		/// <summary>
@@ -124,6 +135,7 @@ namespace Tabulator
 				} catch {
 					sw = null;
 					Console.Error.WriteLine("Output file {0} can not be open for writing.", options.OutputFile);
+					Environment.Exit(1);
 				}
 			} 
 			if ( sw == null ) {
