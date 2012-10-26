@@ -52,7 +52,7 @@ namespace Tabulator.Core
 			int lmax = 0;
 			foreach( Line l in this ) {
 				for( int i = 0; i < l.Count; i++) {
-					if( l[i].Length > lmax ) lmax = l[i].Length;	
+					if( l[i].Trim().TrimQuotes().Trim().Length > lmax ) lmax = l[i].Length;	
 				}
 			}
 			if( lmax > max ) return max;
