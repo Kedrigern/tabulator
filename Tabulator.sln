@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tabulator", "Tabulator\Tabulator.csproj", "{E0F053E7-C086-4AE9-8312-6FA538824A9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tabulator", "Tabulator\tabulator.csproj", "{E0F053E7-C086-4AE9-8312-6FA538824A9C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{680000FE-DAB1-44D3-B9F6-BAEDCCC28352}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,7 +22,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Tabulator\Tabulator.csproj
+		StartupItem = Tabulator\tabulator.csproj
 		Policies = $0
 		$0.DotNetNamingPolicy = $1
 		$1.DirectoryNamespaceAssociation = None

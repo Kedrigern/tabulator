@@ -55,7 +55,7 @@
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Tabulator>
+  <MonoDevelop.Ide.ItemProperties.tabulator>
     <MonoDevelop.Ide.CustomExecutionModes>
       <Data Name="table" Id="2ebd3d33-34ad-46f5-b746-976f934d7cc9" ModeId="Default">
         <CommandData>
@@ -94,5 +94,5 @@
         </CommandData>
       </Data>
     </MonoDevelop.Ide.CustomExecutionModes>
-  </MonoDevelop.Ide.ItemProperties.Tabulator>
+  </MonoDevelop.Ide.ItemProperties.tabulator>
 </Properties>
