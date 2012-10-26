@@ -37,7 +37,7 @@ namespace Tabulator.Convertor
 			
 			var output = convertor.Convert( table );
 
-			var result = "\\begin{tabular}{| C | C |}\n" +
+			var result = "\\begin{tabular}{| c | c |}\n" +
 				"c 11&c 12\\\\ \n" +
 				"c 21&c 22\\\\ \n" +
 				"\\end{tabular}\n";
@@ -63,7 +63,7 @@ namespace Tabulator.Convertor
 
 			var output = convertor.Convert( table );
 		
-			var expected = "\\begin{tabular}{| C | C | C |}\n" +
+			var expected = "\\begin{tabular}{| c | c | c |}\n" +
 				"c 11        &c 12        &c 13\\\\ \n" +
 				"c 21        &c 22        &c 23\\\\ \n" +
 				"c 31        &long cell 32&c 33\\\\ \n" +
