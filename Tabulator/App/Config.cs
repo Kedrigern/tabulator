@@ -31,6 +31,10 @@ namespace Tabulator
 		public Format InputFormat {get; set;}
 		[Option("p", "padding", DefaultValue = Pad.space, HelpText = "Type of padding - spaces or tabs")]
 		public Pad Padding {get; set;}
+		[Option(null, "caption", Required = false, HelpText = "Caption, has higher priority than caption in file. If you have multiple input, than use argument multicaption.")]
+		public string Caption {get; set;}
+		[Option(null, "multicaption", Required = false, HelpText = "Captions diveded by two semicolon (;;).")]
+		public string MultiCaption {get; set;}
 		[Option("v", "version", DefaultValue = false, HelpText = "Show version.")]
 		public bool Version {get; set;}
 		[Option(null, "tests", DefaultValue = false, HelpText = "Run unit tests.")]
