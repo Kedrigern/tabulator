@@ -13,6 +13,7 @@ namespace Tabulator.Parsers
 
 		// table core
 		protected List< Line > newTable = new List< Line >(30);
+		protected string caption;
 	
 		// counters
 		protected int line;

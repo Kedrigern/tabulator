@@ -24,11 +24,11 @@ namespace Tabulator.Parsers
 			foreach( var e in root.Descendants() ) {
 				switch( e.Name.LocalName ) {
 				case "tr":
-					this.addLine( head );
+					addLine( head );
 					break;
 				case "td":
 				case "th":
-					this.addCell( e.Value );
+					addCell( e.Value );
 					break;
 				case "thead":
 					head = true;
@@ -36,12 +36,15 @@ namespace Tabulator.Parsers
 				case "tbody":
 					head = false;
 					break;
+				case "caption":
+					caption = e.Value;
+					break;
 				default:
 					throw new Exception("Unknow element");					
 				}
 			}
 			
-			return new Table( newTable );
+			return new Table( newTable , caption);
 		}
 	}
 }
