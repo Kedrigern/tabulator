@@ -18,6 +18,7 @@ namespace Tabulator.Convertor
 		protected int maxColumnWidth;
 		protected int[] optionalWidths;
 		protected string fieldDelimeter;
+		protected string border;
 		protected Options options;
 		protected StringBuilder buffer;
 	
@@ -70,6 +71,30 @@ namespace Tabulator.Convertor
 					}
 				}
 			}
+		}
+
+		/// <summary>
+		/// Creates the border line, for example some separator or highlighted line
+		/// </summary>
+		protected void CreateBorderLine()
+		{
+			buffer.AppendLine( border );
+		}
+
+		/// <summary>
+		/// Creates the border, for example some separator or highlighted line
+		/// </summary>
+		/// <param name='symbol'>
+		/// Symbol used for line
+		/// </param>
+		protected void CreateBorderLine(char symbol = '-')
+		{
+			foreach( int i in optionalWidths )
+			{
+				buffer.Append( "".PadLeft( i, symbol) );
+				buffer.Append( fieldDelimeter );
+			}
+			buffer.AppendLine();
 		}
 	}
 }

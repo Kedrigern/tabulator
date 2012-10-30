@@ -10,6 +10,7 @@ namespace Tabulator.Convertor
 			if( opt == null )
 				opt = MainClass.Options;
 			fieldDelimeter = opt.OutDelimiter.ToString();
+			border = ""; 
 		}
 
 		public override string Convert (Tabulator.Core.Table t)

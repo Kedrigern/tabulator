@@ -14,6 +14,7 @@ namespace Tabulator.Convertor
 			if( opt == null )
 				opt = MainClass.Options;
 			fieldDelimeter = '&'.ToString();
+			border = "\\hline";
 		}
 
 		public override string Convert ( Core.Table t )
@@ -30,6 +31,8 @@ namespace Tabulator.Convertor
 			}
 			buffer.Append("}\n");
 
+			CreateBorderLine();
+
 			char[] toTrim = new char[] {' ', '\t', '\n', '&'};
 
 			// main cyklus
@@ -40,6 +43,8 @@ namespace Tabulator.Convertor
 				buffer.TrimLineEnd( toTrim );		// remove last delimetr - &; butsometimes is important ?! TODO:
 				buffer.Append( lineDelimeter );			// \\ \n
 			}
+			
+			CreateBorderLine();
 			buffer.Append("\\end{tabular}\n");
 
 			return buffer.ToString();

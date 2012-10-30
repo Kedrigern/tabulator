@@ -16,7 +16,7 @@ namespace Tabulator.Convertor
 		{
 			BeforeConvert(t);
 		
-			CreateBorder();
+			CreateBorderLine();
 
 			foreach( Line line in t )
 			{
@@ -25,23 +25,13 @@ namespace Tabulator.Convertor
 				buffer.AppendLine();
 			}
 
-			CreateBorder();
+			CreateBorderLine();
 
 			if( t.Caption.Length > 0 ) {
 				buffer.Append("Table: " + t.Caption + "}\n");
 			}
 
 			return buffer.ToString();
-		}
-
-		private void CreateBorder(char symbol = '-')
-		{
-			foreach( int i in optionalWidths )
-			{
-				buffer.Append( "".PadLeft( i, symbol) );
-				buffer.Append( fieldDelimeter );
-			}
-			buffer.AppendLine();
 		}
 	}
 }
