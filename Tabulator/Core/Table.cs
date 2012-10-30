@@ -51,9 +51,9 @@ namespace Tabulator.Core
 		{
 			int lmax = 0;
 			foreach( Line l in this ) {
-				for( int i = 0; i < l.Count; i++) {
-					if( l[i].Trim().TrimQuotes().Trim().Length > lmax ) lmax = l[i].Length;	
-				}
+				try {
+					if( l[column].Trim().TrimQuotes().Trim().Length > lmax ) lmax = l[column].Length;	
+				} catch ( Exception ) {/* lmax = 0, ntohink to do */}
 			}
 			if( lmax > max ) return max;
 			else return lmax;				
